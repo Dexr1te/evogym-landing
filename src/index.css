@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "tailwindcss";
+
+
+:root {
+    --gray-20: #F8F4EB;
+    --gray-50: #EFE6E6;
+    --gray-100: #DFCCCC;
+    --gray-500: #5E0000;
+    --primary-100: #FFE1E0;
+    --primary-300: #FFA6A3;
+    --primary-500: #FF6B66;
+    --secondary-400: #FFCD5B;
+    --secondary-500: #FFC132;
+  }
+  
+  html,
+  body,
+  #root,
+  .app {
+    height: 100%;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--gray-500);
+  }
+  
+  /* Дополнительные утилити-классы под себя */
+ /* 🎨 Backgrounds */
+.bg-gradient-yellowred {
+    background-image: linear-gradient(90deg, #FF616A 0%, #FFC837 100%);
+  }
+  
+  .bg-mobile-home {
+    background-image: url('./assets/HomePageGraphic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* 🔤 Fonts */
+  .font-dmsans {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* ✨ Content (псевдоэлементы ::before/::after) */
+@media (min-width: 1060px) {
+    .content-evolvetext::before {
+      content: url('./assets/EvolveText.png');
+    }
+  }
+
+  .content-abstractwaves::before {
+    content: url('./assets/AbstractWaves.png');
+  }
+  
+  .content-sparkles::before {
+    content: url('./assets/Sparkles.png');
+  }
+  
+  .content-circles::before {
+    content: url('./assets/Circles.png');
+  }
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+}
