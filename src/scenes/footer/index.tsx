@@ -1,11 +1,6 @@
-import type { SelectedPage } from "@/shared/types"
 import Logo from '@/assets/Logo.png'
 
-type Props = {
-    setSelectedPage: (value: SelectedPage) => void;
-}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <section id='footer' className="bg-[var(--primary-100)] py-16">
         <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
